@@ -1,0 +1,14 @@
+import { Wrapper, Title, List, Item } from "./styled";
+
+const Tile = ({ title, skills }) => (
+  <Wrapper>
+    <Title>{title}</Title>
+    <List>
+      {skills.map((skill) => (
+        <Item key={skill}>{skill}</Item>
+      ))}
+    </List>
+  </Wrapper>
+);
+
+export default Tile;

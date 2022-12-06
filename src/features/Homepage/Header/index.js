@@ -1,5 +1,14 @@
-import { Wrapper, Image, Content, MiniText, Title, Text, HireButton, MessageIcon } from "./styled";
-import picture from "./images/picture.jpeg";
+import {
+  Wrapper,
+  Image,
+  Content,
+  MiniText,
+  Title,
+  Text,
+  HireButton,
+  MessageIcon,
+} from "./styled";
+import picture from "../images/picture.jpeg";
 const Header = () => {
   return (
     <Wrapper>
@@ -13,8 +22,8 @@ const Header = () => {
           course.
         </Text>
         <HireButton>
-            <MessageIcon />
-            Hire Me
+          <MessageIcon />
+          Hire Me
         </HireButton>
       </Content>
     </Wrapper>

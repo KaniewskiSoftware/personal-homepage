@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { ReactComponent as message } from "./images/message.svg";
+import { ReactComponent as message } from "../images/message.svg";
 
 export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
+  max-width: 1089px;
 `;
 
 export const Image = styled.img`
@@ -16,6 +17,7 @@ export const Image = styled.img`
 export const Content = styled.div``;
 
 export const MiniText = styled.div`
+  margin-top: 64px;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -30,7 +32,6 @@ export const Title = styled.h1`
 
 export const Text = styled.div`
   margin: 35px 0 0;
-  max-width: 633px;
   font-size: 20px;
   font-weight: 400;
 `;
@@ -47,6 +48,7 @@ export const HireButton = styled.a`
   border-radius: 4px;
   background: ${({ theme }) => theme.color.blue};
   color: ${({ theme }) => theme.color.white};
+  cursor: pointer;
 
   &:hover {
     box-shadow: 2px -2px 0px ${({ theme }) => theme.color.buttonHover},
@@ -56,7 +58,7 @@ export const HireButton = styled.a`
   }
 
   &:active {
-    box-shadow: inset 0px 2px 0px ${({theme}) => theme.color.buttonActive};
+    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.buttonActive};
   }
 `;
 export const MessageIcon = styled(message)`
