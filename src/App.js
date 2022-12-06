@@ -1,5 +1,9 @@
+import Homepage from "./features/Homepage"
+
 function App() {
-  return <>s</>;
+    return (
+        <Homepage />
+    )
 }
 
 export default App;
