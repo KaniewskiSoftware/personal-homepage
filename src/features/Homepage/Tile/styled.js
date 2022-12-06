@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  margin: 63px 0 0;
+  margin: 0 0 72px;
   max-height: 404px;
   padding: 32px 32px 24px;
   border-radius: 4px;
