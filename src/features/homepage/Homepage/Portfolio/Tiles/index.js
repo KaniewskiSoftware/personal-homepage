@@ -18,7 +18,7 @@ const Tiles = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {`https://${repo.owner.login}.github.io/${repo.name}/`}
+              GitHub Pages
             </Link>
           </Text>
           <Text>
@@ -28,7 +28,7 @@ const Tiles = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {repo.html.url}
+              Repository
             </Link>
           </Text>
         </Tile>

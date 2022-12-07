@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Header = styled.div`
+export const Wrapper = styled.section`
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
