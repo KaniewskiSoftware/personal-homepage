@@ -13,6 +13,6 @@ export const MediaIcon = styled.img`
   transition: background-color 0.3s;
 
   &:hover {
-    background: ${({ theme }) => theme.color.iconHover};
+    background: ${({ theme }) => theme.color.blue};
   }
 `;

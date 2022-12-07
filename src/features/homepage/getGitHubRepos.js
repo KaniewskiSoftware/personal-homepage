@@ -1,4 +1,4 @@
-export const getGitHubInfo = async () => {
+export const getGitHubRepos = async () => {
     const response = await fetch("https://api.github.com/users/st4rkmano/repos");
   // const response = await fetch("/personal-homepage/fakeAPI.json");
 

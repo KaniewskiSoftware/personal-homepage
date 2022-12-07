@@ -16,7 +16,7 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.p`
-  margin: 0;
+  margin: 0 0 24px;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;

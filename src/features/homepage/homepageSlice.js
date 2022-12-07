@@ -4,21 +4,21 @@ const homepageSlice = createSlice({
   name: "homepage",
   initialState: {
     darkMode: false,
-    gitHubInfo: [],
+    gitHubRepos: [],
     operationStatus: "",
   },
   reducers: {
     toggleDarkMode: (state) => {
       state.darkMode = !state.darkMode;
     },
-    fetchGitHubInfo: (state) => {
+    fetchGitHubRepos: (state) => {
       state.operationStatus = "pending";
     },
-    fetchGitHubInfoSuccess: (state, { payload: gitHubInfo }) => {
-      state.gitHubInfo = gitHubInfo;
+    fetchGitHubReposSuccess: (state, { payload: gitHubRepos }) => {
+      state.gitHubRepos = gitHubRepos;
       state.operationStatus = "success";
     },
-    fetchGitHubInfoError: (state) => {
+    fetchGitHubReposError: (state) => {
       state.operationStatus = "error";
     },
   },
@@ -26,14 +26,17 @@ const homepageSlice = createSlice({
 
 export const {
   toggleDarkMode,
-  fetchGitHubInfo,
-  fetchGitHubInfoSuccess,
-  fetchGitHubInfoError,
+  fetchGitHubRepos,
+  fetchGitHubReposSuccess,
+  fetchGitHubReposError,
 } = homepageSlice.actions;
 
 const selectHomepageState = (state) => state.homepage;
 
 export const selectOperationStatus = (state) =>
   selectHomepageState(state).operationStatus;
+
+export const selectGitHubRepos = (state) => 
+  selectHomepageState(state).gitHubRepos;
 
 export default homepageSlice.reducer;

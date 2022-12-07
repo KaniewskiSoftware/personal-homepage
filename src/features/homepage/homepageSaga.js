@@ -1,21 +1,21 @@
 import { takeLatest, call, put, delay} from "redux-saga/effects";
 import {
-  fetchGitHubInfo,
-  fetchGitHubInfoSuccess,
-  fetchGitHubInfoError,
+  fetchGitHubRepos,
+  fetchGitHubReposSuccess,
+  fetchGitHubReposError,
 } from "./homepageSlice";
-import { getGitHubInfo } from "./getGitHubInfo";
+import { getGitHubRepos } from "./getGitHubRepos";
 
-function* fetchGitHubInfoHandler() {
+function* fetchGitHubReposHandler() {
   try {
     yield delay(2000);
-    const gitHubInfo = yield call(getGitHubInfo);
-    yield put(fetchGitHubInfoSuccess(gitHubInfo));
+    const gitHubRepos = yield call(getGitHubRepos);
+    yield put(fetchGitHubReposSuccess(gitHubRepos));
   } catch {
-    yield put(fetchGitHubInfoError());
+    yield put(fetchGitHubReposError());
   }
 }
 
 export function* homepageSaga() {
-  yield takeLatest(fetchGitHubInfo.type, fetchGitHubInfoHandler);
+  yield takeLatest(fetchGitHubRepos.type, fetchGitHubReposHandler);
 }
