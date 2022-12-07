@@ -1,4 +1,4 @@
-import Homepage from "./features/Homepage"
+import Homepage from "./features/homepage/Homepage"
 
 function App() {
     return (
