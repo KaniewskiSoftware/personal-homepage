@@ -1,4 +1,4 @@
-import { call, put, delay, takeLatest } from "redux-saga/effects";
+import { takeLatest, call, put, delay} from "redux-saga/effects";
 import {
   fetchGitHubInfo,
   fetchGitHubInfoSuccess,
@@ -10,7 +10,6 @@ function* fetchGitHubInfoHandler() {
   try {
     yield delay(2000);
     const gitHubInfo = yield call(getGitHubInfo);
-    yield console.log(gitHubInfo);
     yield put(fetchGitHubInfoSuccess(gitHubInfo));
   } catch {
     yield put(fetchGitHubInfoError());

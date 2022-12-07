@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section``;
-
 export const Header = styled.div`
   margin-bottom: 24px;
   display: flex;

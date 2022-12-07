@@ -31,4 +31,9 @@ export const {
   fetchGitHubInfoError,
 } = homepageSlice.actions;
 
+const selectHomepageState = (state) => state.homepage;
+
+export const selectOperationStatus = (state) =>
+  selectHomepageState(state).operationStatus;
+
 export default homepageSlice.reducer;
