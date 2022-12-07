@@ -1,11 +1,12 @@
 import Container from "./Container";
 import Header from "./Header";
 import Tile from "./Tile";
+import Portfolio from "./Portfolio";
 import { skillsToInclude } from "./skills/skillsToInclude";
 import { skillsToLearn } from "./skills/skillsToLearn";
 import { TitleIcon } from "./StyledComponents";
-import tools from "./images/tools.png";
-import rocket from "./images/rocket.png";
+import tools from "./images/tools.svg";
+import rocket from "./images/rocket.svg";
 
 function Homepage() {
   return (
@@ -29,6 +30,7 @@ function Homepage() {
         }
         skills={skillsToLearn}
       />
+      <Portfolio />
     </Container>
   );
 }

@@ -10,6 +10,7 @@ export const themeLight = {
     buttonActive: "rgba(20, 70, 32, 0.2)",
     tileShadow: "rgba(9, 10, 51, 0.02)",
     tileShadowAlpha: "rgba(9, 10, 51, 0.03)",
+    iconHover: "#0366D6",
     headers: "#252525",
   },
 };
