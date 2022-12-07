@@ -1,9 +1,9 @@
 import Container from "./Container";
 import Header from "./Header";
-import Tile from "./Tile";
 import Portfolio from "./Portfolio";
-import { skillsToInclude } from "./skills/skillsToInclude";
-import { skillsToLearn } from "./skills/skillsToLearn";
+import Skills from "./Skills";
+import { skillsToInclude } from "./skillset/skillsToInclude";
+import { skillsToLearn } from "./skillset/skillsToLearn";
 import { TitleIcon } from "./StyledComponents";
 import tools from "./images/tools.svg";
 import rocket from "./images/rocket.svg";
@@ -12,7 +12,7 @@ function Homepage() {
   return (
     <Container>
       <Header />
-      <Tile
+      <Skills
         title={
           <>
             My skillset includes
@@ -21,7 +21,7 @@ function Homepage() {
         }
         skills={skillsToInclude}
       />
-      <Tile
+      <Skills
         title={
           <>
             What I want to learn next
