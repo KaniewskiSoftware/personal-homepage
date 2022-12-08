@@ -1,10 +1,13 @@
-import { takeLatest, call, put, delay} from "redux-saga/effects";
+import { takeLatest, call, put, delay, select } from "redux-saga/effects";
 import {
   fetchGitHubRepos,
   fetchGitHubReposSuccess,
   fetchGitHubReposError,
+  selectDarkMode,
+  toggleDarkMode,
 } from "./homepageSlice";
 import { getGitHubRepos } from "./getGitHubRepos";
+import { saveDarkModeInLocalStorage } from "./darkModeLocalStorage";
 
 function* fetchGitHubReposHandler() {
   try {
@@ -16,6 +19,12 @@ function* fetchGitHubReposHandler() {
   }
 }
 
+function* saveDarkModeInLocalStorageHandler() {
+  const darkMode = yield select(selectDarkMode);
+  yield call(saveDarkModeInLocalStorage, darkMode);
+}
+
 export function* homepageSaga() {
   yield takeLatest(fetchGitHubRepos.type, fetchGitHubReposHandler);
+  yield takeLatest(toggleDarkMode.type, saveDarkModeInLocalStorageHandler);
 }

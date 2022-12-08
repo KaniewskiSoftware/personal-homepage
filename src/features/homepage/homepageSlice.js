@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getDarkModeFromLocalStorage } from "./darkModeLocalStorage";
 
 const homepageSlice = createSlice({
   name: "homepage",
   initialState: {
-    darkMode: true,
+    darkMode: getDarkModeFromLocalStorage(),
     gitHubRepos: [],
     operationStatus: "",
   },
