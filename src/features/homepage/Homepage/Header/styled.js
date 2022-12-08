@@ -22,12 +22,6 @@ export const Content = styled.div`
   padding-top: 64px;
 `;
 
-export const MiniText = styled.div`
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-`;
-
 export const Title = styled.h1`
   margin: 12px 0 0;
   font-weight: 900;
@@ -36,6 +30,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.div`
+  word-break: break-word;
   margin: 35px 0 0;
   font-size: 20px;
   font-weight: 400;

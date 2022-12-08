@@ -7,6 +7,7 @@ import { skillsToLearn } from "./skillset/skillsToLearn";
 import { TitleIcon } from "./StyledComponents";
 import tools from "./images/tools.svg";
 import rocket from "./images/rocket.svg";
+import Footer from "./Footer";
 
 function Homepage() {
   return (
@@ -31,6 +32,7 @@ function Homepage() {
         skills={skillsToLearn}
       />
       <Portfolio />
+      <Footer/>
     </Container>
   );
 }

@@ -2,12 +2,11 @@ import {
   Wrapper,
   Image,
   Content,
-  MiniText,
   Title,
   Text,
   MessageIcon,
 } from "./styled";
-import { BlueButton } from "../StyledComponents";
+import { BlueButton, MiniText } from "../StyledComponents";
 import picture from "../images/picture.jpeg";
 const Header = () => {
   return (

@@ -8,6 +8,12 @@ export const Wrapper = styled.section`
   color: ${({ theme }) => theme.color.headers};
 `;
 
+export const Icon = styled.div`
+  height: 40px;
+  width: 40px;
+  color: ${({ theme }) => theme.color.blue};
+`;
+
 export const Title = styled.h2`
   font-size: 30px;
   font-weight: 900;

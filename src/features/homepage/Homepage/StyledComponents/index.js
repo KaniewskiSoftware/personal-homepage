@@ -5,16 +5,11 @@ export const TitleIcon = styled.img`
   height: 32px;
 `;
 
-export const MediaIcon = styled.img`
-  width: 48px;
-  height: 48px;
-  background: ${({ theme }) => theme.color.headers};
-  color: ${({ theme }) => theme.color.iconsContent};
-  transition: background-color 0.3s;
-
-  &:hover {
-    background: ${({ theme }) => theme.color.blue};
-  }
+export const MiniText = styled.div`
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.color.primaryText};
 `;
 
 export const BlueButton = styled.a`
@@ -41,7 +36,9 @@ export const BlueButton = styled.a`
     box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.buttonActive};
   }
 
-  ${({github})=> github && css`
-    margin-bottom: 20px;
-  `}
+  ${({ github }) =>
+    github &&
+    css`
+      margin-bottom: 20px;
+    `}
 `;
