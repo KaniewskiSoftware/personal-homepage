@@ -8,10 +8,12 @@ import { TitleIcon } from "./StyledComponents";
 import tools from "./images/tools.svg";
 import rocket from "./images/rocket.svg";
 import Footer from "./Footer";
+import SunButton from "./SunButton";
 
 function Homepage() {
   return (
     <Container>
+      <SunButton />
       <Header />
       <Skills
         title={
@@ -32,7 +34,7 @@ function Homepage() {
         skills={skillsToLearn}
       />
       <Portfolio />
-      <Footer/>
+      <Footer />
     </Container>
   );
 }

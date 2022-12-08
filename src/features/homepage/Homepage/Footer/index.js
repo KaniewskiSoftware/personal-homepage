@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <MiniText>let's talk</MiniText>
-      <Mail href="mailto:kaniewski.patryk@gmail.com">
+      <Mail href="mailto:kaniewski.patryk@gmail.com" rel="noopener noreferrer">
         kaniewski.patryk@gmail.com
       </Mail>
       <Text>

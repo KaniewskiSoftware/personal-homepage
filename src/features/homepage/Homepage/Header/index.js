@@ -20,7 +20,7 @@ const Header = () => {
           front-end developer. Currently learing from youcode Frontend Developer
           course.
         </Text>
-        <BlueButton href="mailto:kaniewski.patryk@gmail.com">
+        <BlueButton href="mailto:kaniewski.patryk@gmail.com" rel="noopener noreferrer">
           <MessageIcon />
           Hire Me
         </BlueButton>

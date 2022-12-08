@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const homepageSlice = createSlice({
   name: "homepage",
   initialState: {
-    darkMode: false,
+    darkMode: true,
     gitHubRepos: [],
     operationStatus: "",
   },
@@ -36,7 +36,9 @@ const selectHomepageState = (state) => state.homepage;
 export const selectOperationStatus = (state) =>
   selectHomepageState(state).operationStatus;
 
-export const selectGitHubRepos = (state) => 
+export const selectGitHubRepos = (state) =>
   selectHomepageState(state).gitHubRepos;
+
+export const selectDarkMode = (state) => selectHomepageState(state).darkMode;
 
 export default homepageSlice.reducer;

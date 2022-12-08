@@ -22,7 +22,7 @@ export const BlueButton = styled.a`
   border: 1px solid ${({ theme }) => theme.color.buttonBorder};
   border-radius: 4px;
   background: ${({ theme }) => theme.color.blue};
-  color: ${({ theme }) => theme.color.secondaryBackground};
+  color: ${({ theme }) => theme.color.buttonText};
   cursor: pointer;
 
   &:hover {
