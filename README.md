@@ -11,7 +11,7 @@ Functionality of the project was developed using [Redux](https://github.com/redu
 
 ## Demo
 
-[TodosReact](https://st4rkmano.github.io/personal-homepage/)
+[PersonalHomepage](https://st4rkmano.github.io/personal-homepage/)
 
 ## Technologies
 
