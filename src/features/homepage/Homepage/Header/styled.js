@@ -15,10 +15,14 @@ export const Image = styled.img`
   border-radius: 50%;
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 64px;
+`;
 
 export const MiniText = styled.div`
-  margin-top: 64px;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -37,31 +41,7 @@ export const Text = styled.div`
   font-weight: 400;
 `;
 
-export const HireButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 154px;
-  height: 49px;
-  margin: 32px 0 0;
-  padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.color.buttonBorder};
-  border-radius: 4px;
-  background: ${({ theme }) => theme.color.blue};
-  color: ${({ theme }) => theme.color.white};
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 2px -2px 0px ${({ theme }) => theme.color.buttonHover},
-      -2px 2px 0px ${({ theme }) => theme.color.buttonHover},
-      2px 2px 0px ${({ theme }) => theme.color.buttonHover},
-      -2px -2px 0px ${({ theme }) => theme.color.buttonHover};
-  }
-
-  &:active {
-    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.buttonActive};
-  }
-`;
 export const MessageIcon = styled(message)`
   margin: 0 16px 0 0;
+  align-self: center;
 `;

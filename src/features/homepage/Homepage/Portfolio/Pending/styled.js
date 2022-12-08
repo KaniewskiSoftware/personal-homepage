@@ -1,30 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Text = styled.p`
-  margin-top: 88px 0 48px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  color: ${({ theme }) => theme.color.headers};
+  margin: 88px 0 48px;
 `;
 
-export const Loader = styled.div`
-  width: 160px;
-  height: 160px;
-  border: 11.375px solid ${({ theme }) => theme.color.buttonBorder};
-  border-right-color: ${({ theme }) => theme.color.blue};
-  border-radius: 50%;
-  animation-name: rotation;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-
-  @keyframes rotatation {
-    from {
+const spinner = keyframes`
+from {
       transform: rotate(0);
     }
     to {
       transform: rotate(360deg);
     }
-  }
+`;
+
+export const Loader = styled.div`
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  border: 11.375px solid ${({ theme }) => theme.color.buttonBorder};
+  border-right-color: ${({ theme }) => theme.color.blue};
+  border-radius: 50%;
+  animation-name: ${spinner};
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 `;

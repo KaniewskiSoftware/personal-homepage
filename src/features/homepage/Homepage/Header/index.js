@@ -5,9 +5,9 @@ import {
   MiniText,
   Title,
   Text,
-  HireButton,
   MessageIcon,
 } from "./styled";
+import { BlueButton } from "../StyledComponents";
 import picture from "../images/picture.jpeg";
 const Header = () => {
   return (
@@ -21,10 +21,10 @@ const Header = () => {
           front-end developer. Currently learing from youcode Frontend Developer
           course.
         </Text>
-        <HireButton>
+        <BlueButton>
           <MessageIcon />
           Hire Me
-        </HireButton>
+        </BlueButton>
       </Content>
     </Wrapper>
   );
