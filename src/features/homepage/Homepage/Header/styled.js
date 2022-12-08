@@ -26,14 +26,13 @@ export const Title = styled.h1`
   margin: 12px 0 0;
   font-weight: 900;
   font-size: 38px;
-  color: ${({ theme }) => theme.color.headers};
 `;
 
-export const Text = styled.div`
+export const Text = styled.p`
   word-break: break-word;
   margin: 35px 0 0;
   font-size: 20px;
-  font-weight: 400;
+  color: ${({ theme }) => theme.color.secondaryText};
 `;
 
 export const MessageIcon = styled(message)`

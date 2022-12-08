@@ -5,7 +5,6 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${({ theme }) => theme.color.headers};
 `;
 
 export const Icon = styled.div`
@@ -21,5 +20,5 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.p`
-  margin: 0;
+  margin: 0 0 24px;
 `;

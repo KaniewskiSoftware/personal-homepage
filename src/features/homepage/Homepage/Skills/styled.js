@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
   max-height: 404px;
   padding: 32px 32px 24px;
   border-radius: 4px;
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.secondaryBackground};
   box-shadow: 0px -2px 50px ${({ theme }) => theme.color.tileShadow},
     0px 16px 58px ${({ theme }) => theme.color.tileShadowAlpha};
 `;
@@ -20,7 +20,6 @@ export const Title = styled.h2`
   font-weight: 900;
   letter-spacing: 0.05em;
   border-bottom: 1px solid ${({ theme }) => theme.color.buttonBorder};
-  color: ${({ theme }) => theme.color.headers};
 `;
 
 export const List = styled.ul`
@@ -29,9 +28,8 @@ export const List = styled.ul`
   padding: 0;
   margin: 32px 0 0;
   list-style: none;
-  line-height: 1.4;
-  font-weight: 400;
   font-size: 18px;
+  color: ${({ theme }) => theme.color.secondaryText};
 `;
 
 export const Item = styled.li`

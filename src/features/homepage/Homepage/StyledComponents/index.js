@@ -9,7 +9,7 @@ export const MiniText = styled.div`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color.primaryText};
+  color: ${({ theme }) => theme.color.secondaryText};
 `;
 
 export const BlueButton = styled.a`
@@ -22,7 +22,7 @@ export const BlueButton = styled.a`
   border: 1px solid ${({ theme }) => theme.color.buttonBorder};
   border-radius: 4px;
   background: ${({ theme }) => theme.color.blue};
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.secondaryBackground};
   cursor: pointer;
 
   &:hover {

@@ -13,7 +13,7 @@ export const Tile = styled.div`
   align-items: flex-start;
   padding: 56px;
   max-width: 592px;
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.secondaryBackground};
   border: 6px solid ${({ theme }) => theme.color.buttonBorder};
   box-shadow: 0px -2px 50px ${({ theme }) => theme.color.tileShadow},
     0px 16px 58px ${({ theme }) => theme.color.tileShadowAlpha};
@@ -32,11 +32,12 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.color.blue};
 `;
 
-export const Text = styled.div`
+export const Text = styled.p`
   margin: 8px 8px 0 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
+  color: ${({ theme }) => theme.color.secondaryText};
 
   ${({ description }) =>
     description &&
@@ -52,6 +53,6 @@ export const Link = styled.a`
   transition: transform 0.3s;
 
   &:hover {
-    transform: scaleY(0.97);
+    color: ${({ theme }) => theme.color.hoverBlue};
   }
 `;
