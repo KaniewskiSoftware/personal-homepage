@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-  max-width: 352px;
+  max-width: 670px;
   margin: 0;
   word-break: break-word;
 `;

@@ -12,7 +12,7 @@ const Tiles = () => {
           <Title>{repo.name}</Title>
           <Text description>{repo.description}</Text>
           <Text>
-            Demo:{" "}
+            Demo:
             <Link
               href={`https://${repo.owner.login}.github.io/${repo.name}/`}
               target="_blank"
@@ -22,8 +22,9 @@ const Tiles = () => {
             </Link>
           </Text>
           <Text>
-            Code:{" "}
+            Code:
             <Link
+              code
               href={repo.html_url}
               target="_blank"
               rel="noreferrer noopener"

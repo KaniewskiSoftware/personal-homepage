@@ -79,9 +79,19 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.color.blue};
   border-bottom: 1px solid ${({ theme }) => theme.color.blue};
   transition: transform 0.3s;
+  margin-left: 8px;
 
   &:hover {
     color: ${({ theme }) => theme.color.hoverBlue};
     border-bottom: 1px solid ${({ theme }) => theme.color.hoverBlue};
   }
+
+  ${({ code }) =>
+    code &&
+    css`
+      margin-left: 13px;
+      @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        margin-left: 10px;
+      }
+    `}
 `;
