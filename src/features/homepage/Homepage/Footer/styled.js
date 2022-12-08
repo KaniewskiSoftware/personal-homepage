@@ -5,9 +5,14 @@ export const Wrapper = styled.footer`
   margin: 24px 0;
 `;
 
-export const Mail = styled.p`
+export const Mail = styled.a`
+  display: block;
+  margin: 24px 0;
   font-weight: 900;
   font-size: 30px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.primaryText};
+  cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.color.hoverBlue};

@@ -3,6 +3,4 @@ export const skillsToLearn = [
   "Node.js",
   "JS classes",
   "React Context",
-  "Cypress",
-  "Unit testing",
 ];
