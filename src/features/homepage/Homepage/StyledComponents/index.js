@@ -3,6 +3,11 @@ import styled, { css } from "styled-components";
 export const TitleIcon = styled.img`
   width: 27px;
   height: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 18px;
+    height: 21px;
+  }
 `;
 
 export const MiniText = styled.div`

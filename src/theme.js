@@ -1,3 +1,9 @@
+const breakpoints = {
+  small: "467px",
+  mobile: "767px",
+  medium: "991px",
+};
+
 export const themeLight = {
   color: {
     background: "#FBFBFE",
@@ -11,10 +17,11 @@ export const themeLight = {
     tileShadow: "rgba(9, 10, 51, 0.02)",
     tileShadowAlpha: "rgba(9, 10, 51, 0.03)",
     buttonBorder: "rgba(209, 213, 218, 0.3)",
-    buttonText:"#FFFFFF",
+    buttonText: "#FFFFFF",
     buttonHover: "#8CC2FF",
     buttonActive: "rgba(20, 70, 32, 0.2)",
   },
+  breakpoints: breakpoints,
 };
 
 export const themeDark = {
@@ -30,8 +37,10 @@ export const themeDark = {
     tileShadow: "rgba(9, 10, 51, 0.02)",
     tileShadowAlpha: "rgba(9, 10, 51, 0.03)",
     buttonBorder: "rgba(209, 213, 218, 0.1)",
-    buttonText:"#FFFFFF",
+    buttonText: "#FFFFFF",
     buttonHover: "#6D93BE",
     buttonActive: "rgba(20, 70, 32, 0.2)",
   },
+
+  breakpoints: breakpoints,
 };

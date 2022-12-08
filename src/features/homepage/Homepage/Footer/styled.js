@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
   max-width: 352px;
   margin: 24px 0;
+  word-break: break-word;
 `;
 
 export const Mail = styled.a`

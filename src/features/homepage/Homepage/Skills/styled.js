@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   margin: 0 0 72px;
-  max-height: 404px;
   padding: 32px 32px 24px;
   border-radius: 4px;
   background: ${({ theme }) => theme.color.secondaryBackground};
@@ -20,6 +19,14 @@ export const Title = styled.h2`
   font-weight: 900;
   letter-spacing: 0.05em;
   border-bottom: 1px solid ${({ theme }) => theme.color.buttonBorder};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    font-size: 18px;
+  }
 `;
 
 export const List = styled.ul`
@@ -28,8 +35,15 @@ export const List = styled.ul`
   padding: 0;
   margin: 32px 0 0;
   list-style: none;
-  font-size: 18px;
   color: ${({ theme }) => theme.color.secondaryText};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Item = styled.li`

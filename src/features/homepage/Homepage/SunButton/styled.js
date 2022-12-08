@@ -5,7 +5,13 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   top: 0;
-  right: 0;
+  right: 12px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    margin: 0;
+    justify-self: center;
+    top: -12px;
+  }
 `;
 
 export const Text = styled.p`
@@ -15,6 +21,10 @@ export const Text = styled.p`
   font-size: 12px;
   color: ${({ theme }) => theme.color.secondaryText};
   text-transform: uppercase;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const Content = styled.button`
