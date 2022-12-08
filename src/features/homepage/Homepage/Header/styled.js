@@ -10,10 +10,12 @@ export const Wrapper = styled.header`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-template-columns: 1fr;
+    margin-bottom: 56px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 17px;
+    margin-bottom: 48px;
   }
 `;
 
@@ -25,6 +27,7 @@ export const Image = styled.img`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     justify-self: center;
+    margin-right: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -45,6 +48,14 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 64px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding-top: 12px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -58,13 +69,22 @@ export const Title = styled.h1`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 24px;
+    margin-top: 8px;
   }
 `;
 
 export const Text = styled.p`
   word-break: break-word;
-  margin: 35px 0 0;
+  margin: 35px 0 32px;
   color: ${({ theme }) => theme.color.secondaryText};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 26px 0 26px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin: 16px 0 24px;
+  }
 `;
 
 export const MessageIcon = styled(message)`

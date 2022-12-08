@@ -7,6 +7,10 @@ export const Wrapper = styled.section`
   background: ${({ theme }) => theme.color.secondaryBackground};
   box-shadow: 0px -2px 50px ${({ theme }) => theme.color.tileShadow},
     0px 16px 58px ${({ theme }) => theme.color.tileShadowAlpha};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin-bottom: 50px;
+  }
 `;
 
 export const Title = styled.h2`

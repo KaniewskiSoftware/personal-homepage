@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   max-width: 352px;
-  margin: 24px 0;
+  margin: 0;
   word-break: break-word;
 `;
 
@@ -18,12 +18,28 @@ export const Mail = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.hoverBlue};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 28px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin: 12px 0;
+    font-size: 18px;
+  }
 `;
 
 export const Text = styled.p`
   word-break: break-word;
   margin-bottom: 56px;
-  font-size: 18px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -40,5 +56,10 @@ export const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.color.blue};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 32px;
+    height: 32px;
   }
 `;

@@ -9,4 +9,8 @@ export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     margin: 56px auto 54px;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin: 32px auto 31px;
+  }
 `;

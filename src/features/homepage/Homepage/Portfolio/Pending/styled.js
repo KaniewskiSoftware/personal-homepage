@@ -24,4 +24,9 @@ export const Loader = styled.div`
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 120px;
+    height: 120px;
+  }
 `;

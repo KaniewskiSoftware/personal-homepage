@@ -22,7 +22,7 @@ export const BlueButton = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 32px 0 0;
+  margin: 0;
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.color.buttonBorder};
   border-radius: 4px;

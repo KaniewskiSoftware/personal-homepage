@@ -4,7 +4,16 @@ export const Wrapper = styled.main`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
-  letter-spacing: 0.05em;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
 `;
 
 export const Tile = styled.div`
@@ -21,6 +30,14 @@ export const Tile = styled.div`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.tileHover};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    padding: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    padding: 24px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -30,12 +47,19 @@ export const Title = styled.h3`
   font-size: 24px;
   line-height: 29px;
   color: ${({ theme }) => theme.color.blue};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 20px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.p`
   margin: 8px 8px 0 0;
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.4;
   color: ${({ theme }) => theme.color.secondaryText};
 
@@ -44,6 +68,10 @@ export const Text = styled.p`
     css`
       margin: 24px 0 16px;
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin: 16px 0;
+  }
 `;
 
 export const Link = styled.a`
@@ -54,5 +82,6 @@ export const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.color.hoverBlue};
+    border-bottom: 1px solid ${({ theme }) => theme.color.hoverBlue};
   }
 `;

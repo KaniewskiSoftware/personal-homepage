@@ -50,7 +50,7 @@ export const Circle = styled.div`
   border-radius: 50%;
   margin: 2px;
   background: ${({ theme }) => theme.color.secondaryText};
-  transition: transform .3s;
+  transition: transform 0.3s;
 
   ${({ active }) =>
     active &&
@@ -60,5 +60,9 @@ export const Circle = styled.div`
 `;
 
 export const SunContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 14px;
+  height: 14px;
   color: ${({ theme }) => theme.color.secondaryBackground};
 `;
