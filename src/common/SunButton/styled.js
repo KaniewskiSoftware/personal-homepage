@@ -39,7 +39,7 @@ export const Content = styled.button`
   cursor: pointer;
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.span`
   position: absolute;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@ export const Circle = styled.div`
     `}
 `;
 
-export const SunContainer = styled.div`
+export const SunContainer = styled.span`
   display: flex;
   align-items: center;
   width: 14px;

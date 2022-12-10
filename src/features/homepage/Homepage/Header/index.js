@@ -4,7 +4,7 @@ import picture from "../images/picture.jpeg";
 
 const Header = () => (
   <Wrapper>
-    <Image src={picture} alt="" />
+    <Image src={picture} alt="Patryk" />
     <Content>
       <MiniText>this is</MiniText>
       <Title>Patryk Kaniewski</Title>
