@@ -1,5 +1,5 @@
 import { Wrapper, Image, Content, Title, Text, MessageIcon } from "./styled";
-import { BlueButton, MiniText } from "../StyledComponents";
+import { ButtonLink, MiniText } from "../StyledComponents";
 import picture from "../images/picture.jpeg";
 
 const Header = () => (
@@ -13,13 +13,13 @@ const Header = () => (
         front-end developer. Currently learing from youcode Frontend Developer
         course.
       </Text>
-      <BlueButton
+      <ButtonLink
         href="mailto:kaniewski.patryk@gmail.com"
         rel="noopener noreferrer"
       >
         <MessageIcon />
         Hire Me
-      </BlueButton>
+      </ButtonLink>
     </Content>
   </Wrapper>
 );

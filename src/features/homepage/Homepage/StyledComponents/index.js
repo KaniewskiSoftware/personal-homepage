@@ -17,7 +17,7 @@ export const MiniText = styled.div`
   color: ${({ theme }) => theme.color.secondaryText};
 `;
 
-export const BlueButton = styled.a`
+export const ButtonLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,7 @@ export const BlueButton = styled.a`
   border-radius: 4px;
   background: ${({ theme }) => theme.color.blue};
   color: ${({ theme }) => theme.color.buttonText};
+  transition: box-shadow 0.3s;
   cursor: pointer;
 
   &:hover {

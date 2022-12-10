@@ -1,9 +1,9 @@
 import { MiniText } from "../StyledComponents";
 import { Wrapper, Mail, Text, IconContainer, Link } from "./styled";
 import { ReactComponent as Github } from "../images/github.svg";
-import { ReactComponent as Facebook } from "../images/facebook.svg";
-import { ReactComponent as Linkedin } from "../images/linkedin.svg";
-import { ReactComponent as Instagram } from "../images/instagram.svg";
+import { ReactComponent as Facebook } from "./icons/facebook.svg";
+import { ReactComponent as Linkedin } from "./icons/linkedin.svg";
+import { ReactComponent as Instagram } from "./icons/instagram.svg";
 
 const Footer = () => (
   <Wrapper>

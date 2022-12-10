@@ -1,5 +1,5 @@
 import { Danger, Header, Text } from "./styled";
-import { BlueButton } from "../../StyledComponents";
+import { ButtonLink } from "../../StyledComponents";
 
 const Error = () => (
   <>
@@ -10,14 +10,14 @@ const Error = () => (
       <br />
       You can check them directly on Github.
     </Text>
-    <BlueButton
+    <ButtonLink
       github
       href="https://github.com/st4rkmano"
       target="_blank"
       rel="noreferrer noopener"
     >
       Go to Github
-    </BlueButton>
+    </ButtonLink>
   </>
 );
 
