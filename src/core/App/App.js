@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
+import { Normalize } from "styled-normalize";
 import Homepage from "../../features/homepage/Homepage";
 import { selectIsDarkMode } from "../../common/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkMode ? themeDark : themeLight}>
+      <Normalize />
       <GlobalStyle />
       <Homepage />
     </ThemeProvider>
