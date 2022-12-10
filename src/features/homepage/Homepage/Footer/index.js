@@ -14,9 +14,8 @@ const Footer = () => (
     </Text>
     <IconsList>
       {socials.map(({ title, url, Icon }) => (
-        <li>
+        <li key={title}>
           <Link
-            key={title}
             href={url}
             title={title}
             target="_blank"
