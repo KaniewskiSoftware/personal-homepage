@@ -42,14 +42,19 @@ export const Text = styled.p`
   }
 `;
 
-export const IconContainer = styled.div`
+export const IconsList = styled.ul`
   display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+  list-style: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    gap: 16px;
+  }
 `;
 
 export const Link = styled.a`
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
   color: ${({ theme }) => theme.color.primaryText};
   transition: color 0.3s;
   cursor: pointer;
@@ -57,9 +62,13 @@ export const Link = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.blue};
   }
+`;
+
+export const styleIcon = (Icon) => styled(Icon)`
+  width: 48px;
+  height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     width: 32px;
-    height: 32px;
   }
 `;
