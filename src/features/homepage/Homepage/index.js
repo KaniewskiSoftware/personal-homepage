@@ -8,7 +8,7 @@ import { TitleIcon } from "./StyledComponents";
 import tools from "./images/tools.svg";
 import rocket from "./images/rocket.svg";
 import Footer from "./Footer";
-import SunButton from "./SunButton";
+import SunButton from "../../../common/SunButton";
 
 function Homepage() {
   return (

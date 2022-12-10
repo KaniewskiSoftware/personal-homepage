@@ -1,17 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectDarkMode, toggleDarkMode } from "../../homepageSlice";
+import { selectIsDarkMode, toggleIsDarkMode } from "../themeSlice";
 import { Circle, Container, Content, SunContainer, Text } from "./styled";
-import { ReactComponent as Sun } from "../images/sun.svg";
+import { ReactComponent as Sun } from "./icons/sun.svg";
 
 const SunButton = () => {
-  const darkMode = useSelector(selectDarkMode);
+  const isDarkMode = useSelector(selectIsDarkMode);
   const dispatch = useDispatch();
 
   return (
     <Container>
-      <Text>dark mode {darkMode ? "on" : "off"}</Text>
-      <Content onClick={() => dispatch(toggleDarkMode())}>
-        <Circle active={darkMode}>
+      <Text>dark mode {isDarkMode ? "on" : "off"}</Text>
+      <Content onClick={() => dispatch(toggleIsDarkMode())}>
+        <Circle active={isDarkMode}>
           <SunContainer>
             <Sun />
           </SunContainer>

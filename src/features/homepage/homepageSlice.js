@@ -1,17 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getDarkModeFromLocalStorage } from "./darkModeLocalStorage";
 
 const homepageSlice = createSlice({
   name: "homepage",
   initialState: {
-    darkMode: getDarkModeFromLocalStorage(),
     gitHubRepos: [],
     operationStatus: "",
   },
   reducers: {
-    toggleDarkMode: (state) => {
-      state.darkMode = !state.darkMode;
-    },
     fetchGitHubRepos: (state) => {
       state.operationStatus = "pending";
     },
@@ -26,7 +21,6 @@ const homepageSlice = createSlice({
 });
 
 export const {
-  toggleDarkMode,
   fetchGitHubRepos,
   fetchGitHubReposSuccess,
   fetchGitHubReposError,
@@ -39,7 +33,5 @@ export const selectOperationStatus = (state) =>
 
 export const selectGitHubRepos = (state) =>
   selectHomepageState(state).gitHubRepos;
-
-export const selectDarkMode = (state) => selectHomepageState(state).darkMode;
 
 export default homepageSlice.reducer;
