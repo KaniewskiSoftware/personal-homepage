@@ -3,6 +3,5 @@ import { homepageSaga } from "../features/homepage/homepageSaga";
 import { themeSaga } from "../common/themeSaga";
 
 export default function* rootSaga() {
-  yield all([homepageSaga()]);
-  yield all ([themeSaga()]);
+  yield all([homepageSaga(), themeSaga()]);
 }
