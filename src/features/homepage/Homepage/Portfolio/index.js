@@ -14,6 +14,7 @@ const Portfolio = () => {
   useEffect(() => {
     dispatch(fetchGitHubRepos());
   }, [dispatch]);
+
   return (
     <Wrapper>
       <Icon>

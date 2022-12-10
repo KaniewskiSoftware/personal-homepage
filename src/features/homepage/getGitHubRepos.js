@@ -4,5 +4,6 @@ export const getGitHubRepos = async () => {
   if (!response.ok) {
     throw new Error(response.statusText);
   }
+  
   return await response.json();
 };
