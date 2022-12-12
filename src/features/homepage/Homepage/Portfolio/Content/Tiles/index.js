@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectGitHubRepos } from "../../../homepageSlice";
+import { selectGitHubRepos } from "../../../../homepageSlice";
 import { Title, Wrapper, Tile, Link, Text } from "./styled";
 
 const Tiles = () => {

@@ -1,5 +1,5 @@
 import { Danger, Header, Text } from "./styled";
-import { ButtonLink } from "../../StyledComponents";
+import { ButtonLink } from "../../../StyledComponents";
 
 const Error = () => (
   <>
