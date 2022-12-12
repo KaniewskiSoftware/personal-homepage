@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as danger } from "../../images/danger.svg";
+import { ReactComponent as danger } from "./danger.svg";
 
 export const Danger = styled(danger)`
   margin-top: 96px;

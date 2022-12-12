@@ -3,7 +3,7 @@ import { ReactComponent as GithubIcon } from "../images/github.svg";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchGitHubRepos } from "../../homepageSlice";
-import Projects from "./Projects";
+import Content from "./Content";
 
 const Portfolio = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const Portfolio = () => {
       </Icon>
       <Title>Portfolio</Title>
       <Text>My recent projects</Text>
-      <Projects />
+      <Content />
     </Wrapper>
   );
 };

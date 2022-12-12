@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { selectOperationStatus } from "../../../homepageSlice";
 import Error from "../Error";
-import Pending from "../Pending";
+import Pending from "./Pending";
 import Tiles from "../Tiles";
 
-const Projects = () => {
+const Content = () => {
   const operationStatus = useSelector(selectOperationStatus);
 
   return {
@@ -14,4 +14,4 @@ const Projects = () => {
   }[operationStatus];
 };
 
-export default Projects;
+export default Content;

@@ -41,6 +41,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 64px;
+  max-width: 560px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding-top: 0px;
