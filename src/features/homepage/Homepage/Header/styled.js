@@ -4,17 +4,20 @@ import { ReactComponent as message } from "../images/message.svg";
 export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-gap: 66px;
   max-width: 1089px;
   margin-bottom: 63px;
   font-size: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-template-columns: 1fr;
+    grid-gap: 48px;
     margin-bottom: 56px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 17px;
+    grid-gap: 12px;
     margin-bottom: 48px;
   }
 `;
@@ -22,7 +25,6 @@ export const Wrapper = styled.header`
 export const Image = styled.img`
   width: 398px;
   height: 398px;
-  margin-right: 66px;
   border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
@@ -50,11 +52,7 @@ export const Content = styled.div`
   padding-top: 64px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding-top: 48px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding-top: 12px;
+    padding-top: 0px;
   }
 `;
 

@@ -1,15 +1,12 @@
 import { Wrapper, Text, Title, Icon } from "./styled";
 import { ReactComponent as GithubIcon } from "../images/github.svg";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchGitHubRepos, selectOperationStatus } from "../../homepageSlice";
-import Tiles from "./Tiles";
-import Pending from "./Pending";
-import Error from "./Error";
+import { fetchGitHubRepos } from "../../homepageSlice";
+import Projects from "./Projects";
 
 const Portfolio = () => {
   const dispatch = useDispatch();
-  const operationStatus = useSelector(selectOperationStatus);
 
   useEffect(() => {
     dispatch(fetchGitHubRepos());
@@ -22,9 +19,7 @@ const Portfolio = () => {
       </Icon>
       <Title>Portfolio</Title>
       <Text>My recent projects</Text>
-      {operationStatus === "pending" && <Pending />}
-      {operationStatus === "success" && <Tiles />}
-      {operationStatus === "error" && <Error />}
+      <Projects />
     </Wrapper>
   );
 };

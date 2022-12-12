@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
@@ -13,6 +13,7 @@ export const Wrapper = styled.main`
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
+    padding: 0 8px;
   }
 `;
 
