@@ -19,7 +19,7 @@ function Homepage() {
         title={
           <>
             My skillset includes
-            <TitleIcon src={tools} />
+            <TitleIcon src={tools} alt="" />
           </>
         }
         skills={skillsToInclude}
@@ -28,7 +28,7 @@ function Homepage() {
         title={
           <>
             What I want to learn next
-            <TitleIcon src={rocket} />
+            <TitleIcon src={rocket} alt="" />
           </>
         }
         skills={skillsToLearn}
