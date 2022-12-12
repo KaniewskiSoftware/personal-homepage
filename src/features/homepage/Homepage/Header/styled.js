@@ -28,7 +28,6 @@ export const Image = styled.img`
   border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    width: 45vw;
     margin-right: 0;
   }
 
