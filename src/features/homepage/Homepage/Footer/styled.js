@@ -13,6 +13,7 @@ export const Mail = styled.a`
   font-size: 30px;
   text-decoration: none;
   color: ${({ theme }) => theme.color.primaryText};
+  transition: color 0.3s;
   cursor: pointer;
 
   &:hover {

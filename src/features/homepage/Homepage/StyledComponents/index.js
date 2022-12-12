@@ -10,9 +10,10 @@ export const TitleIcon = styled.img`
   }
 `;
 
-export const MiniText = styled.div`
+export const MiniText = styled.p`
   font-weight: 700;
   font-size: 12px;
+  margin: 0;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.secondaryText};
 `;

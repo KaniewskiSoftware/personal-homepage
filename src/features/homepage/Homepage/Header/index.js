@@ -1,6 +1,7 @@
 import { Wrapper, Image, Content, Title, Text, MessageIcon } from "./styled";
 import { ButtonLink, MiniText } from "../StyledComponents";
 import picture from "../images/picture.jpg";
+import { email } from "../email";
 
 const Header = () => (
   <Wrapper>
@@ -14,7 +15,8 @@ const Header = () => (
         course.
       </Text>
       <ButtonLink
-        href="mailto:kaniewski.patryk@gmail.com"
+        href={`mailto:${email}`}
+        title={email}
         rel="noopener noreferrer"
       >
         <MessageIcon />

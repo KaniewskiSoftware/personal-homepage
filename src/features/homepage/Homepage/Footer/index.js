@@ -1,12 +1,13 @@
 import { MiniText } from "../StyledComponents";
 import { Wrapper, Mail, Text, IconsList, Link } from "./styled";
 import { socials } from "./socials";
+import { email } from "../email";
 
 const Footer = () => (
   <Wrapper>
-    <MiniText>let's talk</MiniText>
-    <Mail href="mailto:kaniewski.patryk@gmail.com" rel="noopener noreferrer">
-      kaniewski.patryk@gmail.com
+    <MiniText as="h2">let's talk</MiniText>
+    <Mail href={`mailto:${email}`} rel="noopener noreferrer" title={email}>
+      {email}
     </Mail>
     <Text>
       Hit me whenever you have some proposal. I'm open to talk about new
