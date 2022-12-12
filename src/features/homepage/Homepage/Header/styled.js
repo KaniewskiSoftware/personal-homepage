@@ -32,7 +32,7 @@ export const Image = styled.img`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    max-width: 132px;
+    width: 132px;
   }
 `;
 
