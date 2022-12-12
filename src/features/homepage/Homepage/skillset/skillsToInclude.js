@@ -15,6 +15,7 @@ export const skillsToInclude = [
   "Working with API (fetch, axios)",
   "Promises, Async/Await",
   "Error handling",
+  // eslint-disable-next-line no-script-url
   "JavaScript: ES6+",
   "Semantic & accessible HTML",
   "Responsive Web Design",
