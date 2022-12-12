@@ -1,6 +1,6 @@
 import { Wrapper, Image, Content, Title, Text, MessageIcon } from "./styled";
 import { ButtonLink, MiniText } from "../StyledComponents";
-import picture from "../images/picture.jpeg";
+import picture from "../images/picture.jpg";
 
 const Header = () => (
   <Wrapper>
