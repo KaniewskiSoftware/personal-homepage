@@ -17,12 +17,7 @@ export const socials = [
     },
     {
         title: "Linkedin",
-        url: "",
+        url: "www.linkedin.com/in/KaniewskiSoftware",
         Icon: styleIcon(Linkedin),
-    },
-    {
-        title: "Instagram",
-        url: "",
-        Icon: styleIcon(Instagram),
     }
 ]
