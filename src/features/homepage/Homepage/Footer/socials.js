@@ -2,7 +2,6 @@ import { styleIcon } from "./styled";
 import { ReactComponent as Github } from "../images/github.svg";
 import { ReactComponent as Facebook } from "./icons/facebook.svg";
 import { ReactComponent as Linkedin } from "./icons/linkedin.svg";
-import { ReactComponent as Instagram } from "./icons/instagram.svg";
 
 export const socials = [
     {
