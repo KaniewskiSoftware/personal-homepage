@@ -10,13 +10,13 @@ export const socials = [
         Icon: styleIcon(Github),
     },
     {
+        title: "Linkedin",
+        url: "https://www.linkedin.com/in/KaniewskiSoftware",
+        Icon: styleIcon(Linkedin),
+    },
+    {
         title: "Facebook",
         url: "https://www.facebook.com/st4rki",
         Icon: styleIcon(Facebook),
     },
-    {
-        title: "Linkedin",
-        url: "www.linkedin.com/in/KaniewskiSoftware",
-        Icon: styleIcon(Linkedin),
-    }
 ]
