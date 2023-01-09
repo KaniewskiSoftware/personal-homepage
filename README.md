@@ -13,10 +13,6 @@ Functionality of the project was developed using [Redux](https://github.com/redu
 
 [PersonalHomepage](https://kaniewskisoftware.github.io/personal-homepage/)
 
-## API
-
-Source of the API is the [![TMDB](tmdblogo.png)](https://www.themoviedb.org/)
-
 ## Technologies
 
 - React
