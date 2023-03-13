@@ -1,6 +1,9 @@
 export const skillsToLearn = [
-  "TypeScript",
+  "React Query",
   "Node.js",
-  "JS classes",
   "React Context",
+  "Design with AI usage",
+  "Some low-code/no-code solutions",
+  "Wix",
+  "EditorX",
 ];
