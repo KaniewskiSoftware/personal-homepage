@@ -4,10 +4,10 @@ import { Title, Wrapper, Tile, Link, Text } from "./styled";
 
 const Tiles = () => {
   const repos = useSelector(selectGitHubRepos);
-
+  const reposFiltered = repos.filter(repo => repo.name !== "KaniewskiSoftware")
   return (
     <Wrapper>
-      {repos.map((repo) => (
+      {reposFiltered.map((repo) => (
         <Tile key={repo.id}>
           <Title>{repo.name}</Title>
           <Text description>{repo.description}</Text>
