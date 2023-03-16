@@ -4,7 +4,11 @@ import { Title, Wrapper, Tile, Link, Text } from "./styled";
 
 const Tiles = () => {
   const repos = useSelector(selectGitHubRepos);
-  const reposFiltered = repos.filter(repo => repo.name !== "KaniewskiSoftware")
+  const excluded = ["KaniewskiSoftware", "personal-homepage"];
+  const reposFiltered = repos.filter(
+    (repo) => !excluded.includes(repo.name)
+  );
+  
   return (
     <Wrapper>
       {reposFiltered.map((repo) => (
