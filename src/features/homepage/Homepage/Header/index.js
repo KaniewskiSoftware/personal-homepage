@@ -17,7 +17,7 @@ const Header = () => (
         what work really means and I understand the importance of communication.
         Right now you have a unique opportunity to hire me. Make sure, you don't
         miss it.😉
-        PS. I am eager to improve my current skills as well as acquire new ones.
+        PS. I'm eager to improve my current skills as well as acquire new ones.
       </Text>
       <ButtonLink
         href={`mailto:${email}`}
