@@ -10,14 +10,13 @@ const Header = () => (
       <MiniText>this is</MiniText>
       <Title>Patryk Kaniewski</Title>
       <Text>
-        Hi! I'm deeply passionate about computer programming as such. I can do
-        it all day and still love it! Currently trying to become Frontend
-        Developer. Checkout my portfolio below, but remember - It's still
-        growing😁 Beyond all of that, I'm amazing, talkative and humble. I know,
-        what work really means and I understand the importance of communication.
-        Right now you have a unique opportunity to hire me. Make sure, you don't
-        miss it.😉
-        PS. I'm eager to improve my current skills as well as acquire new ones.
+        Welcome to my portfolio! As a passionate and communicative Frontend
+        Developer, I'm eager to showcase my growing body of work. Be sure to
+        check out my latest project, the movies-browser-ts-rq repository, which
+        highlights my advanced skills. I value strong communication and
+        teamwork, and I'm always seeking opportunities to expand my skill set.
+        Don't miss the chance to connect with me - let's explore how we can
+        collaborate on your next project!
       </Text>
       <ButtonLink
         href={`mailto:${email}`}
