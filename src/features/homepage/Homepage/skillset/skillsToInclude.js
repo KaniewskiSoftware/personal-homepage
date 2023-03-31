@@ -24,4 +24,6 @@ export const skillsToInclude = [
   "CSS Grid",
   "CSS BEM convention",
   "Markdown",
+  "Styled Components",
+  "React Query",
 ];
