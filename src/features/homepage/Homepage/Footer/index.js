@@ -11,7 +11,7 @@ const Footer = () => (
     </Mail>
     <Text>
       Hit me whenever you have some proposal. I'm open to talk about new
-      projects or jobs.
+      projects or jobs. Any feedback is welcome!
     </Text>
     <IconsList>
       {socials.map(({ title, url, Icon }) => (
