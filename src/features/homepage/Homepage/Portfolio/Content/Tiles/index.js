@@ -4,11 +4,19 @@ import { Title, Wrapper, Tile, Link, Text } from "./styled";
 
 const Tiles = () => {
   const repos = useSelector(selectGitHubRepos);
-  const excluded = ["KaniewskiSoftware", "personal-homepage"];
-  const reposFiltered = repos.filter(
-    (repo) => !excluded.includes(repo.name)
-  );
-  
+  const excluded = [
+    "KaniewskiSoftware",
+    "personal-homepage",
+    "Spotify-access-hub",
+  ];
+
+  const reposFiltered = repos.filter((repo) => {
+    const isExcluded = excluded.includes(repo.name);
+    const isPracticeRepo = repo.name.startsWith("practice-");
+
+    return !isExcluded && !isPracticeRepo;
+  });
+
   return (
     <Wrapper>
       {reposFiltered.map((repo) => (
