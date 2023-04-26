@@ -1,5 +1,7 @@
 export const skillsToLearn = [
-  "Next.js",
-  "React Context",
-  "Node.js",
+  "WordPress",
+  "Gatsby",
+  "MERN stack",
+  "MySQL",
+  "PHP",
 ];
