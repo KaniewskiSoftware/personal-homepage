@@ -18,6 +18,7 @@ const Tiles = () => {
   });
 
   return (
+    // https://randomideas-ahxc.onrender.com/
     <Wrapper>
       {reposFiltered.map((repo) => (
         <Tile key={repo.id}>
@@ -25,13 +26,23 @@ const Tiles = () => {
           <Text description>{repo.description}</Text>
           <Text>
             Demo:
-            <Link
-              href={`https://${repo.owner.login}.github.io/${repo.name}/`}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              GitHub Pages
-            </Link>
+            {repo.name === "randomideas-app" ? (
+              <Link
+                href={`https://randomideas-ahxc.onrender.com/`}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Random Ideas onrender
+              </Link>
+            ) : (
+              <Link
+                href={`https://${repo.owner.login}.github.io/${repo.name}/`}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                GitHub Pages
+              </Link>
+            )}
           </Text>
           <Text>
             Code:
