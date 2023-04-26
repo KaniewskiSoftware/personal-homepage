@@ -3,6 +3,8 @@ export const skillsToInclude = [
   // eslint-disable-next-line no-script-url
   "JavaScript: ES6+ (8+ months)",
   "REST API (6+ months)",
+  "Fetch API (6+ months)",
+  "Axios (6+ months)",
   "TypeScript (2+ months)",
   "HTML5 & CSS3 (1+ year)",
   "Styled Components (6+ months)",
