@@ -1,6 +1,6 @@
 # Personal Homepage
 
-My online CV includes: basic info about my, my skills, skills I want to learn next and links to my selected projects.
+My online CV includes: basic info about me, my skills, skills I want to learn next and links to my selected projects.
 I'm looking for a job as a junior frontend developer. If u want to offer me one, just hit the Hire me button.
 Technologies: React, Redux Toolkit, Styled Components.
 
