@@ -1,9 +1,8 @@
 # Personal Homepage
 
-This page is my online cv. It includes basic info about me, my skills, skills I want to learn next and links to my other projects. I'm looking for a job as a junior frontend developer. If u want to offer me one, just hit the Hire me button. 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
-Functionality of the project was developed using [Redux](https://github.com/reduxjs/redux-toolkit).
+My online CV includes: basic info about my, my skills, skills I want to learn next and links to my selected projects.
+I'm looking for a job as a junior frontend developer. If u want to offer me one, just hit the Hire me button.
+Technologies: React, Redux Toolkit, Styled Components.
 
 ## Preview
 
