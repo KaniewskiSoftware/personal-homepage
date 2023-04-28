@@ -18,7 +18,7 @@ const Portfolio = () => {
         <GithubIcon />
       </Icon>
       <Title>Portfolio</Title>
-      <Text>My recent projects</Text>
+      <Text>Selected Projects</Text>
       <Content />
     </Wrapper>
   );
