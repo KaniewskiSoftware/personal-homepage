@@ -6,13 +6,13 @@ const Tiles = () => {
   const repos = useSelector(selectGitHubRepos);
 
   const chosen = {
-    1: "movies-browser-ts-rq",
-    2: "movie-browser",
-    3: "personal-homepage",
-    4: "todos-list-react",
-    5: "currency-converter-react",
+    1: "airbnb-clone",
+    2: "movies-browser-ts-rq",
+    3: "movie-browser",
+    4: "personal-homepage",
+    5: "todos-list-react",
+    6: "currency-converter-react",
   };
-
   const reposFiltered = [];
 
   const reposMap = new Map(repos.map((repo) => [repo.name, repo]));
@@ -37,11 +37,11 @@ const Tiles = () => {
           <Text>
             Demo:
             <Link
-              href={`https://${repo.owner.login}.github.io/${repo.name}/`}
+              href={`${repo.homepage}`}
               target="_blank"
               rel="noreferrer noopener"
             >
-              GitHub Pages
+              Homepage
             </Link>
           </Text>
           <Text>
