@@ -1,8 +1,5 @@
 export const skillsToInclude = [
-  "Teamwork (4+ years, university, work, projects)",
   "HTML5 & CSS3 (1+ year)",
-  "Semantic & accessible HTML (1+ year)",
-  "BEM convention (1+ year)",
   // eslint-disable-next-line no-script-url
   "JavaScript: ES6+ (8+ months)",
   "Git (8+ months)",
@@ -16,11 +13,10 @@ export const skillsToInclude = [
   "Immutability (6+ months)",
   "Redux (Toolkit) (6+ months)",
   "Redux-Saga (6+ months)",
-  "Ract Context (2+ months)",
-  "React Query (2+ months, movies-browser-ts-rq)",
+  "React Context (2+ months)",
+  "React Query (2+ months)",
   "TypeScript (2+ months)",
-  "Canva (2+ months)",
   "Tailwind CSS (1+ month)",
-  "Next.js: appDir (1 month, arbnb-clone)",
+  "Next.js: appDir (1 month)",
   "MongoDB (1 month)",
 ];
